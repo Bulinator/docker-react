@@ -6,7 +6,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t speudyland/docker-react -f Dockerfile.dev .
+  - docker build -t dockerhub_speudyland/docker-react -f Dockerfile.dev .
 
 script:
   - docker run -e CI=true speudyland/docker-react npm run test
@@ -20,7 +20,7 @@ deploy:
   bucket_path: "docker-react"
   # No stash entries found.
   # https://stackoverflow.com/questions/58908074/no-stash-entries-found-missing-bucket-name
-  # edge: true
+  edge: true
   cleanup: true
   access_key_id: "$AWS_ACCESS_KEY"
   secret_access_key: "$AWS_SECRET_KEY"
