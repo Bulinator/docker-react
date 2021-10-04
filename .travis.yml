@@ -21,7 +21,7 @@ deploy:
   # No stash entries found.
   # https://stackoverflow.com/questions/58908074/no-stash-entries-found-missing-bucket-name
   # edge: true
-  # cleanup: true
+  cleanup: true
   access_key_id: 
     secure: "$AWS_ACCESS_KEY"
   secret_access_key: 
