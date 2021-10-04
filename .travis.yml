@@ -17,7 +17,7 @@ deploy:
   bucket_path: "docker-react"
   # No stash entries found.
   # https://stackoverflow.com/questions/58908074/no-stash-entries-found-missing-bucket-name
-  edge: true
+  # edge: true
   # push only when we deploy on the master branch
   on:
     branch: master
