@@ -15,6 +15,9 @@ deploy:
   env: "Dockerreact-env"
   bucket_name: "elasticbeanstalk-us-east-2-714555244835"
   bucket_path: "docker-react"
+  # No stash entries found.
+  # https://stackoverflow.com/questions/58908074/no-stash-entries-found-missing-bucket-name
+  edge: true
   # push only when we deploy on the master branch
   on:
     branch: master
