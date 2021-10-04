@@ -1,4 +1,7 @@
 language: generic
+dist: xenial
+os: 
+  - linux
 services:
   - docker
 
@@ -18,7 +21,7 @@ deploy:
   # No stash entries found.
   # https://stackoverflow.com/questions/58908074/no-stash-entries-found-missing-bucket-name
   # edge: true
-  skip_cleanup: true
+  cleanup: true
   # push only when we deploy on the master branch
   on:
     branch: master
