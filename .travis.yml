@@ -22,8 +22,8 @@ deploy:
   # https://stackoverflow.com/questions/58908074/no-stash-entries-found-missing-bucket-name
   # edge: true
   cleanup: true
+  access_key_id: "$AWS_ACCESS_KEY"
+  secret_access_key: "$AWS_SECRET_KEY"
   # push only when we deploy on the master branch
   on:
     branch: master
-  access_key_id: "$AWS_ACCESS_KEY"
-  secret_access_key: "$AWS_SECRET_KEY"
