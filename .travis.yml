@@ -1,6 +1,6 @@
-# CI=true to docker run command
-# language: generic on top of .travis.yml file
-sudo: required
+language: generic
+# deprecated, no longer effect
+#sudo: required
 services:
   - docker
 
